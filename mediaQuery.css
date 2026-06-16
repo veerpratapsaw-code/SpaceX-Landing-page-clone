@@ -1,0 +1,110 @@
+@media (max-width: 1200px) {
+  .links {
+    display: none;
+  }
+  .select {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+
+  .card,
+  .top_card_container {
+    display: none;
+  }
+  .top_bar {
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lowerbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+  }
+  .links-phone {
+    display: flex;
+    flex-direction: column;
+    gap: min(35px, 3.5vh);
+  }
+  .links-phone a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+
+  .top_card_container_phone {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+    color: white;
+    font-size: 110%;
+    font-weight: 400;
+  }
+  .card {
+    width: 100%;
+  }
+  .card img {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .text_page1 h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .text_page2 h1 {
+    font-size: 40px;
+  }
+
+  .text_page3 h1,
+  .text_page4 h1,
+  .text_page5 h1,
+  .text_page6 h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .text_page1 {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .text_page2,
+  .text_page3,
+  .text_page4,
+  .text_page5,
+  .text_page6 {
+    width: 85%;
+    left: 5%;
+    margin: 20px 0;
+  }
+
+  div.footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .text_page1 h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .text_page2 h1 {
+    font-size: 30px;
+  }
+
+  .text_page3 h1,
+  .text_page4 h1,
+  .text_page5 h1,
+  .text_page6 h1 {
+    font-size: 25px;
+  }
+}

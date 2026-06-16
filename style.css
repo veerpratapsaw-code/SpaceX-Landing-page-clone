@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.top_bar {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.606),
+    rgba(121, 121, 121, 0)
+  );
+  height: auto;
+  display: flex;
+  padding: 24px 40px;
+  column-gap: 30px;
+}
+.top_bar img {
+  height: 20px;
+  padding: 2px;
+  position: relative;
+}
+
+.upperbar {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+  padding: 1px;
+}
+.links_bottom {
+  display: flex;
+  gap: 25px;
+  padding: 1px;
+  padding: 12px 0px;
+}
+.links_bottom a,
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Barlow Condensed";
+  padding-top: 5px;
+}
+.non_hero_sec,
+.hero_sec {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.videos {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  position: absolute;
+  object-position: center;
+  width: 100%;
+}
+
+.dark_bg {
+  background: linear-gradient(280deg, rgba(255, 255, 255, 0), #000000b8);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.hero_sec_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  background: #0000006b;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.text_page1 {
+  margin-top: 40px;
+  color: white;
+  margin-bottom: 10%;
+  margin-left: 4%;
+  margin-right: 40%;
+  position: relative;
+}
+
+.text_page2 {
+  position: relative;
+  top: 220px;
+  color: white;
+  margin: 50px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+}
+
+.text_page3 {
+  position: relative;
+  left: 50%;
+  color: white;
+  margin: 50px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+}
+.text_page4 {
+  position: relative;
+  top: 20px;
+  color: white;
+  margin: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+}
+.text_page5 {
+  position: relative;
+  left: 50%;
+  color: white;
+  margin: 50px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+}
+.text_page6 {
+  position: relative;
+  top: 200px;
+  color: white;
+  margin: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 60%;
+}
+.text_page6 p,
+.text_page5 p,
+.text_page4 p,
+.text_page3 p,
+.text_page2 p {
+  text-transform: none;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.text_page1 h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.text_page2 h1 {
+  font-size: 70px;
+}
+.text_page3 h1 {
+  font-size: 40px;
+}
+.text_page4 h1 {
+  font-size: 40px;
+}
+.text_page5 h1 {
+  font-size: 40px;
+}
+.text_page6 h1 {
+  font-size: 40px;
+}
+
+.select {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  border: 1px solid rgba(255, 255, 255, 0.289);
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  position: absolute;
+  right: 40px;
+  z-index: 2;
+}
+
+.top_card_container {
+  position: absolute;
+  top: 51px;
+  right: -40px;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(4px);
+  background: rgb(0 0 0 / 10%);
+  border-radius: 1px;
+  padding: 15px;
+  transition: all 0.7s ease-in-out;
+}
+
+.card {
+  height: 72px;
+  color: white;
+  display: flex;
+}
+
+.card_img img {
+  height: 64px;
+  width: 64px;
+  padding: 4px;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.card_content {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upper {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.lower {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.divider {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: none;
+  height: 1px;
+  width: 100%;
+}
+
+.card_footer {
+  display: flex;
+  color: white;
+  font-size: 10px;
+  font-weight: 300;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.watch_button {
+  background: rgb(0 0 0 / 55%);
+  padding: 22px 20px 20px 20px;
+  color: white;
+  display: flex;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid #ffffff4f;
+  width: fit-content;
+  transition: filter 0.3s ease-in-out;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.watch_button img {
+  height: 20px;
+  padding: 0px 6px 1px 16px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.lowerblend {
+  width: 100%;
+  height: 170px;
+  background: linear-gradient(0deg, rgb(0, 0, 0), rgba(113, 113, 113, 0));
+  position: relative;
+  bottom: 170px;
+  z-index: -1;
+}
+
+div.footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  font-family: "Barlow Condensed";
+  padding: 20px;
+}
+
+div.copyright {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  color: white;
+  padding: 12px 30px;
+}
+.X {
+  background-color: rgb(48, 48, 48);
+  padding: 12px 15px;
+  border-radius: 40px;
+}
+.lowerblend_below {
+  width: 100%;
+  height: 170px;
+  background: linear-gradient(0deg, rgb(0, 0, 0), rgba(113, 113, 113, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.hero_sec_content:has(.select:hover) .top_card_container,
+.top_card_container:hover {
+  opacity: 100%;
+  right: 40px;
+}
+
+.watch_button:hover {
+  filter: invert(1);
+  background-color: #000000;
+}
+
+.hamburger_menu {
+  display: none;
+  filter: invert(1);
+}
+.hamburger_menu img {
+  height: 25px;
+}
